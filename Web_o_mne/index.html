@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Portfolio</title>
+    <!-- Připojení CSS stylů -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Připojení ikon Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HORNÍ MENU -->
+    <nav id="navbar">
+        <div class="logo">
+            Oliver <span class="text-primary">Solisch</span>
+        </div>
+        <ul>
+            <li><a href="#uvod">O mně</a></li>
+            <li><a href="#dovednosti">Dovednosti</a></li>
+            <li><a href="#projekty">Projekty</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- OBROVSKÝ ÚVODNÍ BANNER -->
+    <header id="uvod" class="hero-banner">
+        <h1>Ahoj, jsem student IT & vývojář ✨</h1>
+        <p>Studuji 3. ročník a baví mě tvořit webové stránky a aplikace.</p>
+    </header>
+
+    <!-- HLAVNÍ ROZLOŽENÍ NA 3 SLOUPCE -->
+    <main class="hlavni-rozlozeni">
+        
+        <!-- LEVÝ KOMIKSOVÝ PANEL -->
+        <aside class="bocni-panel">
+            <!-- Názvy obrázků si přepište podle toho, co máte ve složce -->
+            <img src="komiks1.jpg" alt="Komiksový panel">
+            <img src="komiks2.jpg" alt="Komiksový panel">
+        </aside>
+
+        <!-- STŘEDOVÝ OBSAH S KARTAMI -->
+        <div class="stredovy-obsah">
+            
+            <section class="obsah-karta">
+                <h2><i class="fa-solid fa-user"></i> O mně</h2>
+                <hr class="oddelovac">
+                <p>Jsem studentem střední školy se zaměřením na informační technologie. Aktuálně se učím základy vývoje webu (HTML, CSS, JavaScript) a základy programování v Pythonu. Baví mě tvořit čisté a estetické věci s dobrým uživatelským zážitkem.</p>
+            </section>
+
+            <section id="dovednosti" class="obsah-karta">
+                <h2><i class="fa-solid fa-code"></i> Moje dovednosti</h2>
+                <hr class="oddelovac">
+                <ul>
+                    <li><i class="fa-brands fa-html5"></i> <strong>Design:</strong> HTML5 & CSS3 (Responzivní design, Flexbox)</li>
+                    <li><i class="fa-brands fa-python"></i> <strong>Logika:</strong> Základy JavaScriptu a Pythonu</li>
+                    <li><i class="fa-brands fa-git-alt"></i> <strong>Nástroje:</strong> Správa verzí (Git & GitHub), Visual Studio Code</li>
+                    <li><i class="fa-solid fa-pen-nib"></i> <strong>Grafika:</strong> Práce s grafickými editory a UI design</li>
+                </ul>
+            </section>
+
+            <section id="projekty" class="obsah-karta">
+                <h2><i class="fa-solid fa-folder-open"></i> Projekty</h2>
+                <hr class="oddelovac">
+                <div class="projekt-polozka">
+                    <h3>Svět Marvelu</h3>
+                    <p>Fanouškovský web zaměřený na komiksy a filmové univerzum, tvořený pomocí responzivního CSS a efektů matného skla.</p>
+                </div>
+                <div class="projekt-polozka">
+                    <h3>Osobní portfolio</h3>
+                    <p>Tato stránka, která slouží jako prezentace mých dosavadních školních i osobních projektů.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- PRAVÝ KOMIKSOVÝ PANEL -->
+        <aside class="bocni-panel">
+            <!-- Názvy obrázků si přepište podle toho, co máte ve složce -->
+            <img src="komiks3.jpg" alt="Komiksový panel">
+            <img src="komiks4.jpg" alt="Komiksový panel">
+        </aside>
+
+    </main>
+
+    <!-- PATIČKA -->
+    <footer id="kontakt">
+        <p><i class="fa-solid fa-envelope"></i> info@mojeportfolio.cz | <i class="fa-solid fa-phone"></i> +420 123 456 789</p>
+        <p>&copy; 2026 Lukáš Altman | Vytvořeno s nadšením pro kódování.</p>
+    </footer>
+
+</body>
+</html>

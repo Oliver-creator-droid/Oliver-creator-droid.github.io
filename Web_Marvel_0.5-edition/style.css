@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel</title>
+    
+
+    <style>
+        body {
+            background-color: #dbe2ef;
+            font-family: Arial, sans-serif; }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto; /
+            background-color: #ffffff;
+            
+            padding: 30px 50px;
+            
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);}
+
+        h1 {
+            color: #e23636;
+            text-align: center;}
+
+        h2, h3, p, li {
+            color: #1a1a1a;}
+
+        img {
+            border-radius: 15px;
+            display: block; 
+            margin: 20px auto;
+            transition: 0.3s;}
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);}
+
+        a {
+            color: #3f72af;
+            text-decoration: none;
+            font-weight: bold;}
+
+        /* Hover efekt i pro odkazy */
+        a:hover {
+            color: #e23636;
+            text-decoration: underline;
