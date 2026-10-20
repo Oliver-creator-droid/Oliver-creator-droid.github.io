@@ -24,71 +24,92 @@
         </ul>
     </nav>
 
-    <!-- OBROVSKÝ ÚVODNÍ BANNER -->
+    <!-- ÚVODNÍ BANNER -->
     <header id="uvod" class="hero-banner">
-        <h1>Ahoj, jsem student IT & vývojář ✨</h1>
-        <p>Studuji 3. ročník a baví mě tvořit webové stránky a aplikace.</p>
+        <div class="hero-obsah">
+            <h1>✨student IT✨</h1>
+            <p>Studuji 3. ročník a baví mě tvořit webové stránky a aplikace.</p>
+        </div>
     </header>
 
-    <!-- HLAVNÍ ROZLOŽENÍ NA 3 SLOUPCE -->
+    <!-- HLAVNÍ ROZLOŽENÍ - 3 BOXY VEDLE SEBE -->
     <main class="hlavni-rozlozeni">
         
-        <!-- LEVÝ KOMIKSOVÝ PANEL -->
-        <aside class="bocni-panel">
-            <!-- Názvy obrázků si přepište podle toho, co máte ve složce -->
-            <img src="komiks1.jpg" alt="Komiksový panel">
-            <img src="komiks2.jpg" alt="Komiksový panel">
-        </aside>
+        <!-- BOX 1: O MNĚ -->
+        <section class="obsah-karta">
+            <h2><i class="fa-solid fa-user"></i> O mně</h2>
+            <p>Jsem studentem střední školy se zaměřením na informační technologie. Aktuálně se učím základy vývoje webu (HTML, CSS, JavaScript) a základy programování v Pythonu. Baví mě tvořit čisté a estetické věci s dobrym designem, a proto nejen dělám weby, ale také maluji a kresím.</p>
+        </section>
 
-        <!-- STŘEDOVÝ OBSAH S KARTAMI -->
-        <div class="stredovy-obsah">
+        <!-- BOX 2: DOVEDNOSTI -->
+        <section id="dovednosti" class="obsah-karta">
+            <h2><i class="fa-solid fa-code"></i> Moje dovednosti</h2>
+            <ul>
+                <li><i class="fa-brands fa-html5"></i> <strong>Design:</strong> HTML5 & CSS3 (Responzivní design, Flexbox)</li>
+                <li><i class="fa-brands fa-python"></i> <strong>Logika:</strong> Základy JavaScriptu a Pythonu</li>
+                <li><i class="fa-brands fa-git-alt"></i> <strong>Nástroje:</strong> Správa verzí (Git & GitHub), Visual Studio Code</li>
+                <li><i class="fa-solid fa-pen-nib"></i> <strong>Grafika:</strong> Práce s grafickými editory a UI design</li>
+            </ul>
+        </section>
+
+        <!-- BOX 3: PROJEKTY S PŘEKLIKEM -->
+        <section id="projekty" class="obsah-karta">
+            <h2><i class="fa-solid fa-folder-open"></i> Projekty</h2>
             
-            <section class="obsah-karta">
-                <h2><i class="fa-solid fa-user"></i> O mně</h2>
-                <hr class="oddelovac">
-                <p>Jsem studentem střední školy se zaměřením na informační technologie. Aktuálně se učím základy vývoje webu (HTML, CSS, JavaScript) a základy programování v Pythonu. Baví mě tvořit čisté a estetické věci s dobrým uživatelským zážitkem.</p>
-            </section>
+            <div class="projekt-polozka">
+                <h3>Svět Marvelu</h3>
+                <p>Fanouškovský web zaměřený na komiksy a filmové univerzum, tvořený pomocí responzivního CSS a efektů matného skla.</p>
+                <a href="#marvel-detail" class="btn-detail">Více informací <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
 
-            <section id="dovednosti" class="obsah-karta">
-                <h2><i class="fa-solid fa-code"></i> Moje dovednosti</h2>
-                <hr class="oddelovac">
-                <ul>
-                    <li><i class="fa-brands fa-html5"></i> <strong>Design:</strong> HTML5 & CSS3 (Responzivní design, Flexbox)</li>
-                    <li><i class="fa-brands fa-python"></i> <strong>Logika:</strong> Základy JavaScriptu a Pythonu</li>
-                    <li><i class="fa-brands fa-git-alt"></i> <strong>Nástroje:</strong> Správa verzí (Git & GitHub), Visual Studio Code</li>
-                    <li><i class="fa-solid fa-pen-nib"></i> <strong>Grafika:</strong> Práce s grafickými editory a UI design</li>
-                </ul>
-            </section>
-
-            <section id="projekty" class="obsah-karta">
-                <h2><i class="fa-solid fa-folder-open"></i> Projekty</h2>
-                <hr class="oddelovac">
-                <div class="projekt-polozka">
-                    <h3>Svět Marvelu</h3>
-                    <p>Fanouškovský web zaměřený na komiksy a filmové univerzum, tvořený pomocí responzivního CSS a efektů matného skla.</p>
-                </div>
-                <div class="projekt-polozka">
-                    <h3>Osobní portfolio</h3>
-                    <p>Tato stránka, která slouží jako prezentace mých dosavadních školních i osobních projektů.</p>
-                </div>
-            </section>
-
-        </div>
-
-        <!-- PRAVÝ KOMIKSOVÝ PANEL -->
-        <aside class="bocni-panel">
-            <!-- Názvy obrázků si přepište podle toho, co máte ve složce -->
-            <img src="komiks3.jpg" alt="Komiksový panel">
-            <img src="komiks4.jpg" alt="Komiksový panel">
-        </aside>
+            <div class="projekt-polozka">
+                <h3>Osobní portfolio</h3>
+                <p>Tato stránka, která slouží jako prezentace mých dosavadních školních i osobních projektů.</p>
+                <a href="#portfolio-detail" class="btn-detail">Více informací <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
 
     </main>
 
     <!-- PATIČKA -->
     <footer id="kontakt">
-        <p><i class="fa-solid fa-envelope"></i> info@mojeportfolio.cz | <i class="fa-solid fa-phone"></i> +420 123 456 789</p>
-        <p>&copy; 2026 Lukáš Altman | Vytvořeno s nadšením pro kódování.</p>
+        <p><i class="fa-solid fa-envelope"></i> info@mojeportfolio.cz &nbsp;|&nbsp; <i class="fa-solid fa-phone"></i> +420 123 456 789</p>
+        <p>&copy; 2026 Oliver Solisch | Vytvořeno s nadšením.</p>
     </footer>
+
+    <!-- VYSKAKOVACÍ OKNO: DETAIL PROJEKTU MARVEL -->
+    <div id="marvel-detail" class="modal-overlay">
+        <div class="modal-obsah">
+            <a href="#projekty" class="modal-zavrit">&times;</a>
+            <h2><i class="fa-solid fa-mask"></i> Svět Marvelu</h2>
+            <hr class="modal-oddelovac">
+            <p><strong>O čem projekt je:</strong></p>
+            <p>Fanouškovský web zaměřený na komiksy a Marvel Cinematic Universe (MCU). Cílem projektu bylo procvičit pokročilé rozvržení stránek a moderní vizuální efekty.</p>
+            <ul>
+                <li><i class="fa-solid fa-check"></i> <strong>Glassmorphism:</strong> Práce s průhledností a efektem matného skla (backdrop-filter).</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Komiksové panely:</strong> Interaktivní boční galerie s náhledy komiksů.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Použité technologie:</strong> HTML5, CSS3 (Flexbox & Grid), Font Awesome.</li>
+            </ul>
+            <a href="#projekty" class="btn-zavrit-dole">Zavřít detail</a>
+        </div>
+    </div>
+
+    <!-- VYSKAKOVACÍ OKNO: DETAIL OSOBNÍHO PORTFOLIA -->
+    <div id="portfolio-detail" class="modal-overlay">
+        <div class="modal-obsah">
+            <a href="#projekty" class="modal-zavrit">&times;</a>
+            <h2><i class="fa-solid fa-laptop-code"></i> Osobní portfolio</h2>
+            <hr class="modal-oddelovac">
+            <p><strong>O čem projekt je:</strong></p>
+            <p>Tento web slouží jako má osobní vizitka a prezentace mých IT dovedností pro školní účely, firmy i budoucí projekty.</p>
+            <ul>
+                <li><i class="fa-solid fa-check"></i> <strong>Dark Red Theme:</strong> Tmavý kontrastní design s červeným akcentem.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Responzivita:</strong> Web se automaticky přizpůsobuje rozlišení monitorů i mobilů.</li>
+                <li><i class="fa-solid fa-check"></i> <strong>Použité technologie:</strong> HTML5, CSS3, Font Awesome.</li>
+            </ul>
+            <a href="#projekty" class="btn-zavrit-dole">Zavřít detail</a>
+        </div>
+    </div>
 
 </body>
 </html>
