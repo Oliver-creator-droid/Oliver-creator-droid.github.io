@@ -355,3 +355,333 @@ footer p {
         padding: 30px 20px;
     }
 }
+
+
+
+
+/* =========================================
+   FINÁLNÍ STYLY PRO PROJEKTY.HTML
+   ========================================= */
+
+/* Pozadí stránky */
+body.projekty-stranka {
+    background-color: #0a0a0a !important;
+    background-image: none !important;
+    margin: 0; padding: 0; min-height: 100vh;
+    display: flex; flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Horní lišta */
+.header-nav {
+    position: fixed; top: 0; left: 0; width: 100%; height: 70px;
+    background-color: #050505;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 5%; z-index: 9999;
+    border-bottom: 1px solid rgba(255, 30, 30, 0.2); box-sizing: border-box;
+}
+.header-nav .logo a { color: #ffffff; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
+.header-nav .logo a span { color: #ff1e1e; }
+.header-nav .nav-links { display: flex; gap: 25px; align-items: center; }
+.header-nav .nav-links a { color: #cccccc; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.3s ease; }
+.header-nav .nav-links a:hover, .header-nav .nav-links a.active { color: #ff1e1e; }
+
+/* Hlavní obsah */
+.galerie-projektu { flex: 1; padding: 120px 4% 80px 4%; display: flex; flex-direction: column; align-items: center; }
+.galerie-nadpis { color: #ffffff; font-size: 2.2rem; font-weight: 700; margin-bottom: 50px; text-transform: uppercase; letter-spacing: 2px; }
+.karty-kontejner { display: flex; justify-content: center; gap: 30px; width: 100%; max-width: 1300px; flex-wrap: wrap; }
+
+/* Karta s obrázkem */
+.karta-projektu {
+    flex: 1; min-width: 320px; max-width: 400px; height: 550px;
+    border-radius: 15px; border: 1px solid #ff1e1e;
+    background-size: cover; background-position: center; position: relative; overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); transition: transform 0.3s ease;
+}
+.karta-projektu:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(255, 30, 30, 0.4); }
+
+/* Glassmorphism efekt */
+.karta-glass-efekt {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(15, 15, 15, 0.4) 0%, rgba(15, 15, 15, 0.95) 100%);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    display: flex; flex-direction: column; justify-content: space-between; padding: 35px 25px; box-sizing: border-box;
+}
+
+/* Texty a tlačítka */
+.karta-obsah h3 { color: #ff1e1e; font-size: 1.6rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+.karta-obsah p { color: #f0f0f0; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px; text-shadow: 1px 1px 3px rgba(0,0,0,0.8); }
+.karta-tagy { display: flex; gap: 10px; flex-wrap: wrap; }
+.karta-tagy span {
+    background-color: rgba(255, 30, 30, 0.2); color: #ff1e1e; padding: 5px 12px; border-radius: 5px;
+    font-size: 0.8rem; font-weight: 600; border: 1px solid rgba(255, 30, 30, 0.5); backdrop-filter: blur(4px);
+}
+.karta-tlacitko {
+    display: block; width: 100%; background-color: rgba(255, 30, 30, 0.8); backdrop-filter: blur(4px);
+    color: #ffffff; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none;
+    font-weight: 700; font-size: 1.05rem; transition: background-color 0.3s; border: 1px solid #ff1e1e; box-sizing: border-box;
+}
+.karta-tlacitko:hover { background-color: rgba(209, 18, 18, 1); }
+
+/* Patička */
+.footer-projekty { background-color: #050505; padding: 25px; text-align: center; border-top: 1px solid rgba(255,30,30,0.2); margin-top: auto; }
+.footer-links-proj { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-bottom: 15px; }
+.footer-links-proj a { color: #ff1e1e; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s; }
+.footer-links-proj a:hover { color: #ffffff; }
+.copyright-proj { color: #666666; font-size: 0.8rem; margin: 0; }
+
+
+/* =========================================
+   DOPLNĚK: vlož na ÚPLNÝ KONEC style.css
+   (stránky dovednosti.html a kontakt.html)
+   ========================================= */
+
+/* Logo jako odkaz na úvod */
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Aktivní stránka v menu */
+#navbar ul li a.aktivni {
+    background-color: #e23636;
+    border: 1px solid #ff4d4d;
+}
+
+/* Nižší banner na podstránkách */
+.hero-mensi {
+    min-height: 25vh;
+}
+
+/* Jedna velká karta místo tří */
+.hlavni-rozlozeni.jedna-karta {
+    grid-template-columns: 1fr;
+    max-width: 1100px;
+}
+
+.jedna-karta .obsah-karta:hover {
+    transform: none;
+}
+
+.jedna-karta .btn-detail {
+    align-self: flex-start;
+    margin-top: 25px;
+}
+
+/* Seznamy ve dvou sloupcích */
+.dovednosti-seznam,
+.kontakt-seznam {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.obsah-karta ul.dovednosti-seznam li,
+.obsah-karta ul.kontakt-seznam li {
+    margin-bottom: 0;
+}
+
+/* --- KONTAKT --- */
+.kontakt-seznam li {
+    display: flex;
+    align-items: center;
+}
+
+.kontakt-popisek {
+    display: block;
+    font-size: 0.85rem;
+    color: #9a9a9a;
+}
+
+.kontakt-seznam a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.kontakt-seznam a:hover {
+    color: #e23636;
+}
+
+/* --- GALERIE: ČERVENÉ RÁMEČKY NA OBRÁZKY --- */
+.obsah-karta h3.galerie-titul {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 35px 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.galerie-obrazky {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.obrazek-ramecek {
+    margin: 0;
+    aspect-ratio: 4 / 3;
+    border: 2px solid #e23636;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(15, 15, 15, 0.85);
+    box-shadow: 0 0 15px rgba(226, 54, 54, 0.25);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.obrazek-ramecek:hover {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 25px rgba(226, 54, 54, 0.5);
+}
+
+/* Vložený obrázek se vždy přizpůsobí rámečku */
+.obrazek-ramecek img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.obrazek-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    text-align: center;
+    color: #9a9a9a;
+    font-size: 0.95rem;
+}
+
+.obrazek-placeholder i {
+    font-size: 34px;
+    margin: 0;
+}
+
+/* --- RESPONZIVITA DOPLŇKU --- */
+@media (max-width: 900px) {
+    .galerie-obrazky {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .dovednosti-seznam,
+    .kontakt-seznam {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .galerie-obrazky {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* =========================================
+   DOPLNĚK 2: vlož na ÚPLNÝ KONEC style.css
+   (až za doplněk pro dovednosti a kontakt)
+   Nová stránka projekty.html
+   ========================================= */
+
+/* Karty projektů mají stejnou výšku a tlačítko vždy dole */
+.projekt-karta {
+    min-height: 460px;
+}
+
+.karta-tagy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.karta-tagy span {
+    background-color: rgba(15, 15, 15, 0.85);
+    color: #e23636;
+    border: 1px solid #e23636;
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.projekt-karta .btn-detail {
+    margin-top: auto;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+/* =========================================
+   DOPLNĚK 3: vlož na ÚPLNÝ KONEC style.css
+   (až za oba předchozí doplňky)
+   Nové rozložení stránky dovednosti.html:
+   obrázky po stranách, karta uprostřed
+   ========================================= */
+
+/* 3 sloupce: obrázky | velká karta | obrázky */
+.hlavni-rozlozeni.dovednosti-rozlozeni {
+    grid-template-columns: minmax(180px, 1fr) minmax(0, 2.2fr) minmax(180px, 1fr);
+    max-width: 1600px;
+}
+
+.dovednosti-rozlozeni > .obsah-karta:hover {
+    transform: none;
+}
+
+/* Sloupec se dvěma rámečky: dělí si výšku karty uprostřed */
+.strana-galerie {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.strana-galerie .obrazek-ramecek {
+    position: relative;
+    flex: 1;
+    aspect-ratio: auto;
+    min-height: 180px;
+}
+
+.strana-galerie .obrazek-ramecek img,
+.strana-galerie .obrazek-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* --- TABLET A MOBIL: karta nahoře, obrázky pod ní ve 2 sloupcích --- */
+@media (max-width: 1100px) {
+    .hlavni-rozlozeni.dovednosti-rozlozeni {
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+    }
+
+    .dovednosti-rozlozeni > .obsah-karta {
+        grid-column: 1 / -1;
+        order: -1;
+    }
+
+    .strana-galerie .obrazek-ramecek {
+        flex: none;
+        aspect-ratio: 4 / 3;
+        min-height: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hlavni-rozlozeni.dovednosti-rozlozeni {
+        grid-template-columns: 1fr;
+    }
+}

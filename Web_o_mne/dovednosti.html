@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dovednosti | Oliver Solisch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HORNÍ MENU -->
+    <nav id="navbar">
+        <div class="logo">
+            <a href="index.html">Oliver <span class="text-primary">Solisch</span></a>
+        </div>
+        <ul>
+            <li><a href="index.html">O mně</a></li>
+            <li><a href="dovednosti.html" class="aktivni">Dovednosti</a></li>
+            <li><a href="projekty.html">Projekty</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- BANNER -->
+    <header class="hero-banner hero-mensi">
+        <div class="hero-obsah">
+            <h1>Dovednosti</h1>
+            <p>Co už umím a na čem pracuji.</p>
+        </div>
+    </header>
+
+    <!--
+        JAK VLOŽIT OBRÁZEK:
+        V rámečku smaž celý <div class="obrazek-placeholder">...</div>
+        a místo něj napiš: <img src="obrazky/nazev.jpg" alt="Popis obrázku">
+    -->
+    <main class="hlavni-rozlozeni dovednosti-rozlozeni">
+
+        <!-- LEVÁ STRANA: 2 OBRÁZKY -->
+        <div class="strana-galerie">
+            <figure class="obrazek-ramecek">
+                <div class="obrazek-placeholder"><i class="fa-regular fa-image"></i> Sem vlož obrázek</div>
+            </figure>
+            <figure class="obrazek-ramecek">
+                <div class="obrazek-placeholder"><i class="fa-regular fa-image"></i> Sem vlož obrázek</div>
+            </figure>
+        </div>
+
+        <!-- STŘED: JEDNA VELKÁ KARTA -->
+        <section class="obsah-karta">
+
+            <h2><i class="fa-solid fa-code"></i> Moje dovednosti</h2>
+            <ul class="dovednosti-seznam">
+                <li><i class="fa-brands fa-html5"></i> <strong>Design:</strong> HTML5 &amp; CSS3 (Responzivní design, Flexbox)</li>
+                <li><i class="fa-brands fa-python"></i> <strong>Logika:</strong> Základy JavaScriptu a Pythonu</li>
+                <li><i class="fa-brands fa-git-alt"></i> <strong>Nástroje:</strong> Správa verzí (Git &amp; GitHub), Visual Studio Code</li>
+                <li><i class="fa-solid fa-pen-nib"></i> <strong>Grafika:</strong> Práce s grafickými editory a UI design</li>
+            </ul>
+
+            <!-- DALŠÍ DOVEDNOSTI (mimo programování) - VZOROVÉ TEXTY, PŘEPIŠ PODLE SEBE -->
+            <h3 class="galerie-titul"><i class="fa-solid fa-lightbulb"></i> Další dovednosti</h3>
+            <ul class="dovednosti-seznam">
+                <li><i class="fa-solid fa-users"></i> <strong>Týmová práce:</strong> Umím spolupracovat na společných projektech</li>
+                <li><i class="fa-solid fa-comments"></i> <strong>Komunikace:</strong> Jasně vysvětlím svůj nápad nebo postup</li>
+                <li><i class="fa-solid fa-user-check"></i> <strong>Samostatnost:</strong> Zvládnu si práci naplánovat a dotáhnout</li>
+                <li><i class="fa-solid fa-graduation-cap"></i> <strong>Učení:</strong> Rychle se učím nové technologie</li>
+            </ul>
+
+        </section>
+
+        <!-- PRAVÁ STRANA: 2 OBRÁZKY -->
+        <div class="strana-galerie">
+            <figure class="obrazek-ramecek">
+                <div class="obrazek-placeholder"><i class="fa-regular fa-image"></i> Sem vlož obrázek</div>
+            </figure>
+            <figure class="obrazek-ramecek">
+                <div class="obrazek-placeholder"><i class="fa-regular fa-image"></i> Sem vlož obrázek</div>
+            </figure>
+        </div>
+
+    </main>
+
+    <!-- PATIČKA -->
+    <footer>
+        <p>
+            <i class="fa-solid fa-envelope"></i> info@mojeportfolio.cz &nbsp;|&nbsp;
+            <i class="fa-solid fa-phone"></i> +420 123 456 789
+        </p>
+        <p>
+            <a href="https://VASE-ADRESA-MARVEL-WEBU.cz" target="_blank" class="footer-link">
+                <i class="fa-solid fa-globe"></i> Projekt Svět Marvelu
+            </a>
+            &nbsp;|&nbsp;
+            <a href="https://validator.w3.org/check?uri=referer" target="_blank" class="footer-link">
+                <i class="fa-solid fa-circle-check"></i> HTML5 Validated
+            </a>
+        </p>
+        <p>&copy; 2026 Oliver Solisch | Vytvořeno s nadšením.</p>
+    </footer>
+
+</body>
+</html>
